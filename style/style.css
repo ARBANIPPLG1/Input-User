@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+}
+
+.head-bar {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #3858e9;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    -moz-appearance: textfield;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-bottom: 1px solid #007bff;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+h2 {
+    text-align: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.input-group input {
+    flex: 1;
+}
+
+/* Animasi untuk form-group */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    animation: slideDown 0.3s ease-in-out;
+}
